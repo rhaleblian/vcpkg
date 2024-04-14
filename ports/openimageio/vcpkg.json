@@ -19,7 +19,6 @@
     "boost-thread",
     "boost-type-traits",
     "fmt",
-    "libheif",
     "libjpeg-turbo",
     "libpng",
     "libsquish",

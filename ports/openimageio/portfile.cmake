@@ -9,7 +9,7 @@ vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO OpenImageIO/oiio
     REF 9f74cf4d9813bfdcad5bca08b4ff75a25d056cb0 # 2.3.7.2
-    SHA512 cebc388e842e983f010c5f3bf57bed3fe1ae9d2eac79019472f8431b194d6a8b156b27cc5688bd0998aa2d01959d47bcdc7e637417f755433ffe32c491cdc376
+    SHA512 b8c1b0879640c1f8fe5f266b7f00ee2ddfb07417ce888d5c1598914e74c8b2d90f228f65f156416c282c248eb4262703c3d76cc0cd251e19d2f996f8bb244adc
     HEAD_REF master
     PATCHES
         fix-config-cmake.patch

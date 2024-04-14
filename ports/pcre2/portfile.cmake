@@ -1,11 +1,11 @@
 set(PCRE2_VERSION 10.37)
-set(EXPECTED_SHA f91760a8e0747f52211612fb0e134d685e224d16bd884eb574718d077a586b1fd7b6435d4e3b75c879b12e02b252467ecc28cdc4bc2903c783dacab089f99c99)
+set(EXPECTED_SHA 72c06b3a2b91a7cc689d81d319bfe6315a1e1a7dc51ddbbd3440257edb375a24da5fc98618d457c48719eb91399d460f38e205d9ff54bb976d35ac0544d07589)
 set(PATCHES
         pcre2-10.35_fix-uwp.patch
 )
 
 vcpkg_download_distfile(ARCHIVE
-    URLS "https://ftp.pcre.org/pub/pcre/pcre2-${PCRE2_VERSION}.zip"
+    URLS "https://github.com/PCRE2Project/pcre2/archive/pcre2-${PCRE2_VERSION}.zip"
     FILENAME "pcre2-${PCRE2_VERSION}.zip"
     SHA512 ${EXPECTED_SHA}
     SILENT_EXIT
