@@ -16,4 +16,4 @@ steps:
     .\bootstrap-vcpkg.bat
     echo Installing openimageio:x64-windows .
     .\vcpkg.exe install openimageio:x64-windows
-  displayName: 'Bootstrap Vcpkg'
+  displayName: 'Install OpenImageIO'
