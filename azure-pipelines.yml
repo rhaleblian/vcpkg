@@ -11,7 +11,9 @@ pool:
   demands: Agent.Name -equals carbon
 
 steps:
-- script: |
+- script:
     .\bootstrap-vcpkg.bat
+
+- script:
     .\vcpkg.exe install openimageio:x64-windows
-  displayName: 'Build and install OpenImageIO'
+  displayName: openimageio:x64-windows
