@@ -12,8 +12,6 @@ pool:
 
 steps:
 - script: |
-    echo Bootstrapping.
     .\bootstrap-vcpkg.bat
-    echo Installing openimageio:x64-windows .
     .\vcpkg.exe install openimageio:x64-windows
-  displayName: 'Install OpenImageIO'
+  displayName: 'Build and install OpenImageIO'
