@@ -77,7 +77,10 @@ jobs:
 
     - name: Bootstrap vcpkg
       run: .\bootstrap-vcpkg.bat
-      
+
+    - name: Install OpenImageIO
+      run: .\install-openimageio.bat      
+
     # # Execute all unit tests in the solution
     # - name: Execute unit tests
     #   run: dotnet test
