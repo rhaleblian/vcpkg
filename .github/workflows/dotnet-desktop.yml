@@ -79,7 +79,7 @@ jobs:
       run: .\bootstrap-vcpkg.bat
 
     - name: Install OpenImageIO
-      run: .\install-openimageio.bat
+      run: .\vcpkg install openimageio[pybind11,tools]:x64-windows
 
     # # Execute all unit tests in the solution
     # - name: Execute unit tests
