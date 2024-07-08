@@ -236,9 +236,8 @@ function(vcpkg_acquire_msys out_msys_root)
         DEPS sh tar awk findutils grep sed
     )
     z_vcpkg_acquire_msys_declare_package(
-        file-5.45-3-x86_64.pkg.tar.zst 
         URL "https://repo.msys2.org/msys/x86_64/file-5.45-3-x86_64.pkg.tar.zst"
-        SHA512 14F6BB0A19F8C74D5B3FE4E95FCF013C0DB3BB270C795009F315A2207CA099EFC32A9AB487DEE72603C0ADBE2949337724BBB28B779C71BBF9C1045AD6E23E72
+        SHA512 14f6bb0a19f8c74d5b3fe4e95fcf013c0db3bb270c795009f315a2207ca099efc32a9ab487dee72603c0adbe2949337724bbb28b779c71bbf9c1045ad6e23e72
         DEPS gcc-libs zlib libbz2
     )
     z_vcpkg_acquire_msys_declare_package(
