@@ -40,7 +40,7 @@ name: .NET Core Desktop
 
 on:
   push:
-    branches: [ "openimageio-2.3.7-py39" ]
+    branches: [ "none" ]
 
 jobs:
 
