@@ -2,7 +2,7 @@ name: Install and Archive
 
 on:
   push:
-    branches: [ "openimageio-2.3.7-py39", "github-actions" ]
+    branches: [ "github-actions" ]
 
 jobs:
 
@@ -28,12 +28,14 @@ jobs:
     - name: Bootstrap vcpkg
       run: .\bootstrap-vcpkg.bat
 
-    - name: Install OpenImageIO
-      run: .\vcpkg install openimageio[pybind11,tools]:x64-windows
+    # - name: Install OpenImageIO
+    #   run: .\vcpkg install openimageio[pybind11,tools]:x64-windows
+    - name: Install icu
+      run: .\vcpkg install icu:x64-windows
 
-    - name: Create a tarball
-      run: |
-        powershell Compress-Archive -Path packages\openimageio -DestinationPath oiio-2.3.7-py39-win32.zip
+    # - name: Create a tarball
+    #   run: |
+    #     powershell Compress-Archive -Path packages\openimageio -DestinationPath oiio-2.3.7-py39-win32.zip
 
     # - name: Release the tarball
     #   uses: ncipollo/release-action@v1.14.0
